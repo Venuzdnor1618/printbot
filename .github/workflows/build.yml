@@ -11,7 +11,7 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -r requirements.txt pyinstaller
-      - run: pyinstaller --onefile --windowed --name PrintBot --collect-all customtkinter main.py
+      - run: pyinstaller --onefile --name PrintBot --collect-all customtkinter main.py
       - uses: actions/upload-artifact@v4
         with:
           name: PrintBot
